@@ -45,6 +45,7 @@ h1 {
 .first_form button {
     background-color: #000;
     color: white;
+    border: 2px double red;
     border-radius: 30px;
     margin: 0;
     width: 100px;
@@ -86,6 +87,7 @@ h1 {
     background-color: #000;
     color: white;
     border-radius: 30px;
+    border: 2px double red;
     width: 100px;
     height: 30px;
     cursor: pointer;
