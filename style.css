@@ -1,4 +1,4 @@
-body{
+body {
     /* height: 96vh; */
     width: 98vw;
     background: url(./img/BG.jpg);
@@ -8,9 +8,12 @@ body{
     color: #fff;
 }
 
-h1{
+h1 {
     color: #fff;
 }
+
+
+/* first form styleing */
 
 .container {
     display: flex;
@@ -21,11 +24,54 @@ h1{
 }
 
 
+.first_form {
+    text-align: center;
+    border: 5px double #fff;
+    border-radius: 30px;
+    width: 250px;
+    padding: 5px;
+}
+
+.first_form input {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    width: 50px;
+    border: 2px double red;
+    text-align: center;
+
+}
+
+.first_form button {
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+    margin: 0;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+
+/* second form styleing */
 
 .container2 {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.form_input {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.matrix_input {
+    border: 5px double white;
+    border-radius: 30px;
+    padding: 5px;
 }
 
 .matrix_input input {
@@ -36,39 +82,11 @@ h1{
     color: white;
 }
 
-
-.form_input {
-    display: flex;
-    justify-content: center;
-    visibility: hidden;
-}
-
-
-.first_form{
-    text-align: center;
-    }
-
-.first_form button{
-    background-color: #000;
-    color: white;
-    margin: 0;
-    width: 100px;
-    height: 30px;
-
-}
-
-.first_form input {
-    background-color: black;
-    color: white;
-    width: 50px;
-    border: 2px double red;
-    text-align: center;
-
-}
-
 .sum_btn {
     background-color: #000;
     color: white;
+    border-radius: 30px;
     width: 100px;
     height: 30px;
+    cursor: pointer;
 }
