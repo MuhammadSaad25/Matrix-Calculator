@@ -17,6 +17,7 @@ h1 {
 
 .container {
     display: flex;
+    /* flex-wrap: nowrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -30,6 +31,7 @@ h1 {
     border-radius: 30px;
     width: 250px;
     padding: 5px;
+    /* flex-wrap: nowrap; */
 }
 
 .first_form input {
@@ -59,6 +61,7 @@ h1 {
 
 .container2 {
     display: flex;
+    /* flex-wrap: nowrap; */
     justify-content: center;
     text-align: center;
 }
@@ -67,6 +70,7 @@ h1 {
     display: flex;
     justify-content: center;
     visibility: hidden;
+    /* flex-wrap: nowrap; */
 }
 
 .matrix_input {
