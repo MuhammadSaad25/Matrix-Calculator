@@ -1,0 +1,74 @@
+body{
+    /* height: 96vh; */
+    width: 98vw;
+    background: url(./img/BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    color: #fff;
+}
+
+h1{
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.matrix_input input {
+    width: 30px;
+    border: 2px double red;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+.form_input {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+
+.first_form{
+    text-align: center;
+    }
+
+.first_form button{
+    background-color: #000;
+    color: white;
+    margin: 0;
+    width: 100px;
+    height: 30px;
+
+}
+
+.first_form input {
+    background-color: black;
+    color: white;
+    width: 50px;
+    border: 2px double red;
+    text-align: center;
+
+}
+
+.sum_btn {
+    background-color: #000;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
