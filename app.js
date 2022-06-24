@@ -61,17 +61,21 @@ function sum(){
     for (let i=0; i<first_input; i++){
         for(let j=0; j< second_input; j++){
             
-            document.querySelector(`#sum_input_${i}_${j}`).value =
-            +document.querySelector(`#matrix_input1_${i}_${j}`).value
-            +
-            +document.querySelector(`#matrix_input2_${i}_${j}`).value
             
+           let first_input=Number(document.querySelector(`#matrix_input1_${i}_${j}`).value)
+           let second_input=Number(document.querySelector(`#matrix_input2_${i}_${j}`).value)
             
+
+            let result = add(first_input,second_input)
+            document.querySelector(`#sum_input_${i}_${j}`).value = result
             
         }
     }
 
+}
 
+function add(a,b){
+    return a+b;
 }
 
 
