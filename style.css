@@ -80,7 +80,7 @@ h1 {
 }
 
 .matrix_input input {
-    width: 30px;
+    width: 60px;
     border: 2px double red;
     text-align: center;
     background-color: black;
@@ -95,4 +95,15 @@ h1 {
     width: 100px;
     height: 30px;
     cursor: pointer;
+}
+
+select{
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+    border: 2px double red;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+
 }

@@ -30,7 +30,7 @@ h1{
 }
 
 .matrix_input input {
-    width: 15px;
+    width: 60px;
     border: 2px double red;
     text-align: center;
 }
@@ -55,7 +55,7 @@ h1{
 }
 
 .first_form input {
-    width: 30px;
+    width: 50px;
     border: 2px double red;
     text-align: center;
 
