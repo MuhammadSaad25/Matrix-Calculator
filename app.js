@@ -40,9 +40,9 @@ function start() {
     for (let i = 0; i < first_input; i++) {
         for (let j = 0; j < second_input; j++) {
 
-            matrix_input1.innerHTML += `<input type="number" class="matrix_input" id="matrix_input1_${i}_${j}" required value= "0" min = "0" max = "999">`;
+            matrix_input1.innerHTML += `<input type="number" class="matrix_input" id="matrix_input1_${i}_${j}" required value= "0" min = "-999" max = "999">`;
 
-            matrix_input2.innerHTML += `<input type="number" class="matrix_input" id="matrix_input2_${i}_${j}" required value= "0" min = "0" max = "999">`;
+            matrix_input2.innerHTML += `<input type="number" class="matrix_input" id="matrix_input2_${i}_${j}" required value= "0" min = "-999" max = "999">`;
 
             sum_input.innerHTML += `<input type="number" readonly class="matrix_input" id="sum_input_${i}_${j}" required placeholder ="0" >`;
         }
@@ -75,35 +75,30 @@ function sum() {
     let value = select.options[select.selectedIndex].value;
     console.log(value);
 
+    let result
+
     if (value == "+") {
-        let result = sumMatrix(matrix1, matrix2);
-        for (let i = 0; i < result.length; i++) {
-            for (let j = 0; j < result.length; j++) {
-                document.querySelector(`#sum_input_${i}_${j}`).value = result[i][j];
-            }
-        }
+        result = sumMatrix(matrix1, matrix2);
 
     }
 
     else if (value == "-") {
-        let result = subMatrix(matrix1, matrix2);
-        for (let i = 0; i < result.length; i++) {
-            for (let j = 0; j < result.length; j++) {
-                document.querySelector(`#sum_input_${i}_${j}`).value = result[i][j];
-            }
-        }
+        result = subMatrix(matrix1, matrix2);
 
     }
 
     else if (value == "x") {
-        let result = mulMatrix(matrix1, matrix2);
-        for (let i = 0; i < result.length; i++) {
-            for (let j = 0; j < result.length; j++) {
-                document.querySelector(`#sum_input_${i}_${j}`).value = result[i][j];
-            }
-        }
+        result = mulMatrix(matrix1, matrix2);
 
     }
+    
+    for (let i = 0; i < result.length; i++) {
+        for (let j = 0; j < result.length; j++) {
+            document.querySelector(`#sum_input_${i}_${j}`).value = result[i][j];
+        }
+    }
+
+
 }
 
 function sumMatrix(matrix1, matrix2) {
