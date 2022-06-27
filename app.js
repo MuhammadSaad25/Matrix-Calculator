@@ -79,17 +79,14 @@ function sum() {
 
     if (value == "+") {
         result = sumMatrix(matrix1, matrix2);
-
     }
 
     else if (value == "-") {
         result = subMatrix(matrix1, matrix2);
-
     }
 
     else if (value == "x") {
         result = mulMatrix(matrix1, matrix2);
-
     }
     
     for (let i = 0; i < result.length; i++) {
